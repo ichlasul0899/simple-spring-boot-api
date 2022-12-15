@@ -18,8 +18,11 @@ public class StudentService {
         this.studentRepository = studentRepository;
     }
 
-    public List<Student> getStudents(){
-        return studentRepository.findAll();
+    // public List<Student> getStudents(){
+    //     return studentRepository.findAll();
+    // }
+    public String getStudents(){
+        return "Welcome";
     }
 
     public void addNewStudent(Student student) {

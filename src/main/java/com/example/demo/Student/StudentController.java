@@ -24,8 +24,13 @@ public class StudentController {
         this.studentService = studentService;
     }
 
+    // @GetMapping
+    // public List<Student> getStudents(){
+    //     return studentService.getStudents();
+    // }
+
     @GetMapping
-    public List<Student> getStudents(){
+    public String getStudents(){
         return studentService.getStudents();
     }
 
